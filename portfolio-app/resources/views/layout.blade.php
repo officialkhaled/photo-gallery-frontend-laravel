@@ -2,26 +2,26 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <title>Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-  @include('css')
+    @include('assets.css')
 
 </head>
 
 <body>
 
-  @include('header')
+@include('assets.header')
 
-  @yield('content') {{-- Dynamic Content --}}
+@yield('content') {{-- Dynamic Content --}}
 
-  @include('footer')
+@include('assets.footer')
 
-  @include('script')
+@include('assets.script')
 
 </body>
 

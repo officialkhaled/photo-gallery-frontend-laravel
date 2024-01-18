@@ -2,22 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class PortfolioController extends Controller
 {
     public function index()
     {
-        return view('content');
+        return view('content.content');
     }
-    
+
     public function about()
     {
-        return view('about');
+        return view('content.about');
     }
 
     public function contact()
     {
-        return view('contact');
+        return view('content.contact');
     }
 }
