@@ -33,9 +33,14 @@
 
         <div class="header-social-links">
             {{-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> --}}
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/khaledhossain.dev" class="facebook" target="_blank"><i
+                    class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/khaledhossain.dev/" class="instagram"
+               target="_blank"><i
+                    class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/khaledhossain-devacc/" class="linkedin"
+               target="_blank"><i
+                    class="bi bi-linkedin"></i></a>
         </div>
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
