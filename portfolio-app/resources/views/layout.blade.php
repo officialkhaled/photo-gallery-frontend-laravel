@@ -15,13 +15,13 @@
 
 <body>
 
-@include('assets.header')
+    @include('assets.header')
 
-@yield('content') {{-- Dynamic Content --}}
+    @yield('content') {{-- Dynamic Content --}}
 
-@include('assets.footer')
+    @include('assets.footer')
 
-@include('assets.script')
+    @include('assets.script')
 
 </body>
 
