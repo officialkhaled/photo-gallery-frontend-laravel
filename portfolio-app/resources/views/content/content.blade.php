@@ -6,7 +6,8 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 text-center">
-                    <h2>I'm <span>Khaled Hossain</span> a Professional Photographer from Dhaka,
+                    <h2>I'm <span>Khaled Hossain</span> <br>a Professional Photographer <br>from
+                        Dhaka,
                         Bangladesh</h2>
                     <p>“Look for the magic in every moment.”</p>
                     <a href="{{ route('contact') }}" class="btn-get-started">Connect with me</a>

@@ -652,7 +652,9 @@ h6 {
 }
 
 .testimonials .testimonial-item p {
-    font-style: italic;
+    /*font-style: italic;*/
+    font-size: 14px;
+    font-weight: 200;
     margin: 0 auto 15px auto;
 }
 
@@ -1082,9 +1084,11 @@ h6 {
 .contact .php-email-form .error-message {
     display: none;
     color: #fff;
-    background: #df1529;
+    background: #ab1d13;
+    box-shadow: 0 2px 15px #7d1009;
     text-align: left;
     padding: 15px;
+    border-radius: 4px;
     font-weight: 600;
 }
 
@@ -1130,6 +1134,11 @@ h6 {
     border: 1px solid #2e3133;
     color: #fff;
 }
+.contact .php-email-form input::placeholder,
+.contact .php-email-form textarea::placeholder {
+    color: #808080;
+    opacity: 1;
+}
 
 .contact .php-email-form input {
     height: 44px;
@@ -1148,8 +1157,23 @@ h6 {
     border-radius: 4px;
 }
 
+.contact .php-email-form button[type="reset"] {
+    background: var(--color-default);
+    border: 0;
+    padding: 10px 35px;
+    color: var(--color-secondary);
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
 .contact .php-email-form button[type="submit"]:hover {
-    background: rgba(39, 167, 118, 0.8);
+    background: #FE7A36;
+    transition: 0.3s ease-out;
+}
+
+.contact .php-email-form button[type="reset"]:hover {
+    background: #FE7A36;
+    transition: 0.3s ease-out;
 }
 
 @keyframes animate-loading {
