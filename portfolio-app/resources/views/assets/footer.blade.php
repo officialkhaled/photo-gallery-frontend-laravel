@@ -6,7 +6,7 @@
             Rights Reserved
         </div>
         <div class="credits">
-            Photographed by <a href="#">Khaled Hossain</a>
+            Photographed by <a href="#"><strong>Khaled Hossain</strong></a>
         </div>
     </div>
 </footer>
