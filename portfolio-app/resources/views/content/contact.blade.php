@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 text-center">
-
+                    <h2>Hello, World!</h2>
                 </div>
             </div>
         </div>
@@ -14,7 +14,7 @@
 
     <main id="main" data-aos="fade">
         <div class="container">
-
+            <h2>Hello, World!</h2>
         </div>
 
     </main><!-- End #main -->

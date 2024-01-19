@@ -35,7 +35,8 @@ a {
 }
 
 a:hover {
-    color: #2c9fbc;
+    color: #FE7A36;
+    transition: 0.3s ease-out;
     text-decoration: none;
 }
 
@@ -72,12 +73,12 @@ h6 {
     width: 120px;
     height: 1px;
     display: inline-block;
-    background: #2c9fbc;
+    background: #FE7A36;
+    transition: 0.3s ease-out;
     margin: 4px 10px;
 }
 
 .section-header p {
-    margin: 0;
     margin: 0;
     font-size: 36px;
     font-weight: 700;
@@ -111,7 +112,7 @@ h6 {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.page-header .cta-btn {
+.page-header .cta-btn, .hero .btn-get-started {
     font-family: var(--font-primary);
     font-weight: 400;
     font-size: 14px;
@@ -126,7 +127,8 @@ h6 {
 }
 
 .page-header .cta-btn:hover {
-    background: #2c9fbc;
+    background: #FE7A36;
+    transition: 0.3s ease-out;
 }
 
 /*--------------------------------------------------------------
@@ -153,7 +155,8 @@ h6 {
 }
 
 .scroll-top:hover {
-    background: #2c9fbc;
+    background: #FE7A36;
+    transition: 0.3s ease-out;
     color: #fff;
 }
 
@@ -208,9 +211,9 @@ h6 {
     left: 0;
     top: 50%;
     width: 1px;
-    height: 0%;
+    height: 0;
     transform: translateY(-50%);
-    animation: lineincrease 1000ms ease-in-out 0s forwards;
+    animation: lineIncrease 1000ms ease-in-out 0s forwards;
 }
 
 #preloader .line:after {
@@ -222,7 +225,7 @@ h6 {
     width: 1px;
     height: 100%;
     transform: translateY(-100%);
-    animation: linemove 1200ms linear 0s infinite;
+    animation: lineMove 1200ms linear 0s infinite;
     animation-delay: 2000ms;
 }
 
@@ -237,12 +240,12 @@ h6 {
 
 #preloader.loaded:before,
 #preloader.loaded:after {
-    animation: preloaderfinish 300ms ease-in-out 500ms forwards;
+    animation: preloaderFinish 300ms ease-in-out 500ms forwards;
 }
 
-@keyframes lineincrease {
+@keyframes lineIncrease {
     0% {
-        height: 0%;
+        height: 0;
     }
 
     100% {
@@ -250,7 +253,7 @@ h6 {
     }
 }
 
-@keyframes linemove {
+@keyframes lineMove {
     0% {
         transform: translateY(200%);
     }
@@ -260,13 +263,13 @@ h6 {
     }
 }
 
-@keyframes preloaderfinish {
+@keyframes preloaderFinish {
     0% {
-        width: 5 0%;
+        width: 50%;
     }
 
     100% {
-        width: 0%;
+        width: 0;
     }
 }
 
@@ -321,7 +324,7 @@ h6 {
     color: rgba(255, 255, 255, 0.5);
     padding-left: 15px;
     display: inline-block;
-    line-height: 0px;
+    line-height: 0;
     transition: 0.3s;
     font-size: 16px;
 }
@@ -768,20 +771,14 @@ h6 {
     width: 100%;
 }
 
-.gallery-single
-    .portfolio-details-slider
-    .swiper-pagination
-    .swiper-pagination-bullet {
+.gallery-single .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
     background-color: rgba(255, 255, 255, 0.7);
     opacity: 1;
 }
 
-.gallery-single
-    .portfolio-details-slider
-    .swiper-pagination
-    .swiper-pagination-bullet-active {
+.gallery-single .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--color-primary);
 }
 
@@ -865,7 +862,7 @@ h6 {
 }
 
 .gallery-single .portfolio-info .btn-visit:hover {
-    background: #2c9fbc;
+    background: #FE7A36;
 }
 
 .gallery-single .portfolio-description h2 {
@@ -911,7 +908,7 @@ h6 {
 
 .gallery-single .portfolio-description .testimonial-item .quote-icon-left,
 .gallery-single .portfolio-description .testimonial-item .quote-icon-right {
-    color: #2c9fbc;
+    color: #FE7A36;
     font-size: 26px;
     line-height: 0;
 }
@@ -932,7 +929,7 @@ h6 {
 
 .gallery-single .portfolio-description .testimonial-item p {
     font-style: italic;
-    margin: 0 0 15px 0 0 0;
+    margin: 0 0 15px 0;
     padding: 0;
 }
 
@@ -993,7 +990,7 @@ h6 {
     top: 0;
     width: 100%;
     height: 100%;
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 .services .service-item:hover h4 a,
@@ -1209,22 +1206,8 @@ h6 {
     font-size: 18px;
 }
 
-.hero .btn-get-started {
-    font-family: var(--font-primary);
-    font-weight: 400;
-    font-size: 14px;
-    display: inline-block;
-    padding: 12px 40px;
-    border-radius: 4px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: 0.3s;
-    color: #fff;
-    background: var(--color-primary);
-}
-
 .hero .btn-get-started:hover {
-    background: #2c9fbc;
+    background: #FE7A36;
 }
 
 @media (max-width: 768px) {
@@ -1257,4 +1240,9 @@ h6 {
 
 .footer .credits a {
     color: var(--color-primary);
+}
+
+.footer .credits a:hover {
+    color: #FE7A36;
+    transition: 0.3s ease-out;
 }

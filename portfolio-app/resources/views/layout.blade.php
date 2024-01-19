@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Portfolio</title>
+    <title>Photo Gallery</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -15,13 +15,13 @@
 
 <body>
 
-@include('assets.header')
+    @include('assets.header')
 
-@yield('content') {{-- Dynamic Content --}}
+    @yield('content') {{-- Dynamic Content --}}
 
-@include('assets.footer')
+    @include('assets.footer')
 
-@include('assets.script')
+    @include('assets.script')
 
 </body>
 
