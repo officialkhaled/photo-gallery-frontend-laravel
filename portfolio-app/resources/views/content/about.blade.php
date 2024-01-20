@@ -78,11 +78,12 @@
         <!-- ======= Testimonials Section ======= -->
         <section id="testimonials" class="testimonials">
             <div class="container">
-
-                <div class="section-header">
-                    <h2>Testimonials</h2>
-                    <p>What they are saying</p>
-                </div>
+                @if($testimonials && count($testimonials) > 0)
+                    <div class="section-header">
+                        <h2>Testimonials</h2>
+                        <p>What they are saying</p>
+                    </div>
+                @endif
 
                 <div class="slides-3 swiper card" style="background: #202020; border: solid 1px
                 #202020; color: #fff; border-radius: 8px;">
@@ -99,11 +100,6 @@
                                         @for ($i = 0; $i < $testimonial->star; $i++)
                                             <i class="bi bi-star-fill"></i>
                                         @endfor
-                                        {{--<i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>--}}
                                     </div>
                                     <p>
                                         {{ $testimonial->description }}

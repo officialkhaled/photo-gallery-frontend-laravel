@@ -56,7 +56,7 @@
 
                 <div class="row justify-content-center mt-4">
                     <div class="col-lg-9">
-                        <form action="" method="post" role="form" class="php-email-form">
+                        <form action="{{ route('contact') }}" method="post" role="form" class="php-email-form">
                             @csrf
 
                             <div class="row">
