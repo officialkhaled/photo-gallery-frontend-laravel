@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Testimonial;
+
 class PortfolioController extends Controller
 {
     public function index()
@@ -11,7 +13,8 @@ class PortfolioController extends Controller
 
     public function about()
     {
-        return view('content.about');
+        $testimonials = Testimonial::limit(5)->get();
+        return view('content.about', ['testimonials' => $testimonials]);
     }
 
     public function contact()
