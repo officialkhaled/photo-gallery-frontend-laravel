@@ -56,7 +56,7 @@
 
                 <div class="row justify-content-center mt-4">
                     <div class="col-lg-9">
-                        <form action="{{ route('contact') }}" method="post" role="form" class="php-email-form">
+                        <form action="{{ route('create-contact') }}" method="post" class="php-email-form">
                             @csrf
 
                             <div class="row">
@@ -74,7 +74,9 @@
                                        id="subject" placeholder="Subject" />
                             </div>
                             <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Message" ></textarea>
+                                <textarea class="form-control" name="message" rows="5"
+                                          placeholder="Message"
+                                ></textarea>
                             </div>
                             <div class="my-3">
                                 <div class="loading">Loading</div>

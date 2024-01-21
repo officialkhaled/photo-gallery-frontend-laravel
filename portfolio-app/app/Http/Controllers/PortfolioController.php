@@ -15,22 +15,35 @@ class PortfolioController extends Controller
 
     public function about()
     {
-        $testimonials = Testimonial::limit(5)->get();
-        return view('content.about', ['testimonials' => $testimonials]);
+        try {
+            $testimonials = Testimonial::limit(5)->get();
+        } catch (\Exception $e) {
+            // Log the error or handle it in a way that fits your application
+            return view('errors.500'); // Display a generic error view
+        }
+
+        if (view()->exists('content.about')) {
+            return view('content.about', ['testimonials' => $testimonials]);
+        } else {
+            return view('errors.404'); // Display a 404 view if the 'content.about' view does not exist
+        }
+
+//        $testimonials = Testimonial::limit(5)->get();
+//        return view('content.about', ['testimonials' => $testimonials]);
     }
 
-    public function contact()
+    public function contactPage()
     {
         return view('content.contact');
     }
 
-    public function contactSend(Request $request)
+    public function create(Request $request)
     {
         $request->validate([
-            'name' => 'required',
+            'name' => 'required|string|max:255',
             'email' => 'required|email',
             'subject' => 'nullable|string|max:255',
-            'message' => 'required|string|min:100'
+            'message' => 'required|string',
         ]);
 
         // Storing input values in a variable
@@ -44,7 +57,7 @@ class PortfolioController extends Controller
             'name' => $name,
             'email' => $email,
             'subject' => $subject,
-            'message' => $message
+            'message' => $message,
         ]);
 
         return redirect()->route('contact');
