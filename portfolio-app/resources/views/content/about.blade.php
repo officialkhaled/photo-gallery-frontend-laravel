@@ -78,50 +78,48 @@
         <!-- ======= Testimonials Section ======= -->
         <section id="testimonials" class="testimonials">
             <div class="container">
-
-                <div class="section-header">
-                    <h2>Testimonials</h2>
-                    <p>What they are saying</p>
-                </div>
+                @if($testimonials && count($testimonials) > 0)
+                    <div class="section-header">
+                        <h2>Testimonials</h2>
+                        <p>What they are saying</p>
+                    </div>
+                @endif
 
                 <div class="slides-3 swiper card" style="background: #202020; border: solid 1px
                 #202020; color: #fff; border-radius: 8px;">
 
                     <div class="swiper-wrapper">
 
-                        {{--@foreach($testimonials as $testimonial)--}}
-                        @for($i=1; $i<=5; $i++)
+                        @foreach($testimonials as $testimonial)
+                        {{--@for($i=1; $i<=5; $i++)--}}
                             <div class="swiper-slide">
                                 <div class="testimonial-item" style="border-radius: 8px; border:
                                 solid 1px
                                 #262626; box-shadow: 0 2px 5px #262626">
                                     <div class="stars">
-                                        {{--{{ $testimonial -> star }}--}}
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
+                                        @for ($i = 0; $i < $testimonial->star; $i++)
+                                            <i class="bi bi-star-fill"></i>
+                                        @endfor
                                     </div>
-                                    {{--<p>
-                                        {{ $testimonial->description }}
-                                    </p>--}}
                                     <p>
-                                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                        {{ $testimonial->description }}
                                     </p>
+                                    {{--<p>
+                                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                    </p>--}}
                                     <div class="profile mt-auto">
                                         <img src="{{ asset
-                                        ('assets/img/testimonials/testimonials-' .$i .'.jpg') }}"
+                                        ('assets/img/testimonials/testimonials-' .$loop->iteration .'.jpg') }}"
                                              class="testimonial-img" alt="">
-                                        <h3>Saul Goodman</h3>
-                                        <h4>Ceo &amp; Founder</h4>
-                                        {{--<h3>{{ $testimonial->name }}</h3>
-                                        <h4>{{ $testimonial->designation }}</h4>--}}
+                                        {{--<h3>Saul Goodman</h3>
+                                        <h4>Ceo &amp; Founder</h4>--}}
+                                        <h3>{{ $testimonial->name }}</h3>
+                                        <h4>{{ $testimonial->designation }}</h4>
                                     </div>
                                 </div>
                             </div> <!-- End testimonial item -->
-                      @endfor
-                      {{--@endforeach--}}
+                      {{--@endfor--}}
+                      @endforeach
 
                     </div>
 
