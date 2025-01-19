@@ -8,9 +8,6 @@
       <PhpSpecSuiteConfiguration>
         <option name="myPath" value="$PROJECT_DIR$/portfolio-app" />
       </PhpSpecSuiteConfiguration>
-      <PhpSpecSuiteConfiguration>
-        <option name="myPath" value="$PROJECT_DIR$/portfolio-app" />
-      </PhpSpecSuiteConfiguration>
     </suites>
   </component>
 </project>
