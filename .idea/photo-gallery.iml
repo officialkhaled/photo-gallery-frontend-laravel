@@ -8,7 +8,6 @@
       <sourceFolder url="file://$MODULE_DIR$/portfolio-app/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/portfolio-app/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/portfolio-app/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/portfolio-app/vendor/carbonphp/carbon-doctrine-types" />
       <excludeFolder url="file://$MODULE_DIR$/portfolio-app/vendor/composer" />
@@ -121,6 +120,8 @@
       <excludeFolder url="file://$MODULE_DIR$/portfolio-app/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/portfolio-app/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/portfolio-app/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/portfolio-app/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/portfolio-app/vendor" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
